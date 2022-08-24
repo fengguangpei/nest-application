@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { Cat } from '../interfaces/cat.interface';
-import { ListAllEntities } from '../dtos/list-all-entities.dto';
+import { Cat } from './interfaces/cat.interface';
+import { ListAllEntities } from './dtos/list-all-entities.dto';
 @Injectable()
 export class CatService {
   private readonly cats: Cat[] = [];

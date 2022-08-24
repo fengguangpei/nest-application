@@ -8,11 +8,11 @@ import {
   Put,
   Delete,
 } from '@nestjs/common';
-import { CreateCat } from '../dtos/create-cat.dto';
-import { ListAllEntities } from '../dtos/list-all-entities.dto';
-import { UpdateCat } from '../dtos/update-cat.dto';
-import { CatService } from '../services/cat.service';
-import { Cat } from '../interfaces/cat.interface';
+import { CreateCat } from './dtos/create-cat.dto';
+import { ListAllEntities } from './dtos/list-all-entities.dto';
+import { UpdateCat } from './dtos/update-cat.dto';
+import { CatService } from './cat.service';
+import { Cat } from './interfaces/cat.interface';
 @Controller('cat')
 export class CatController {
   constructor(private catService: CatService) {}
